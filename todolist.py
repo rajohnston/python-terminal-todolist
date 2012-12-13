@@ -178,7 +178,7 @@ class ToDoListController(object):
 		
 	def delete_all(self): 
 		self.model.purge()	
-		self.model.get_list(0,0) #d'oh this should be 'return_list' method ... not this imaginary one!!
+		self.return_list(0,0) 
 
 	def delete_item(self,item): 
 		self.model.delete(item)	
